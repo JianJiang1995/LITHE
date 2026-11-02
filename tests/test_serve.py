@@ -50,3 +50,27 @@ def test_parse_route():
     assert serve.parse_route("1") == [(1, 1.0)]
     assert serve.parse_route("0:0.6,2:0.4") == [(0, 0.6), (2, 0.4)]
     assert serve.parse_route("none") == []
+
+
+class Two(nn.Module):
+    def __init__(self):
+        super().__init__()
+        self.fc = nn.Linear(128, 64)
+        self.gc = nn.Linear(128, 64)
+
+    def forward(self, x):
+        return self.fc(x) + self.gc(x)
+
+
+def test_attach_accepts_different_module_order():
+    rng = torch.Generator().manual_seed(1)
+    mods = [{"name": n, "shape_a": [4, 128], "shape_b": [64, 4]} for n in ("fc", "gc")]
+
+    def idx():
+        return {"A": torch.randint(0, 512, (3, 8), generator=rng).numpy().astype("uint16"),
+                "B": torch.randint(0, 512, (3, 4), generator=rng).numpy().astype("uint16")}
+
+    a = lithe.LitheAdapter(modules=mods, indices={"fc": idx(), "gc": idx()}, rank=4, alpha=8.0)
+    b = lithe.LitheAdapter(modules=mods[::-1], indices={"fc": idx(), "gc": idx()}, rank=4, alpha=8.0)
+    _, layers = serve.attach_adapters(Two(), [a, b])
+    assert set(layers) == {"fc", "gc"}

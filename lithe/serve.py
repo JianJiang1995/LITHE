@@ -106,7 +106,8 @@ def attach_adapters(model: nn.Module, adapters: List[LitheAdapter],
     ref = adapters[0]
     names = [mm["name"] for mm in ref.modules]
     for ad in adapters[1:]:
-        if [mm["name"] for mm in ad.modules] != names or ad.rank != ref.rank:
+        # compare module sets: training and encode outputs may list modules in different orders
+        if {mm["name"] for mm in ad.modules} != set(names) or ad.rank != ref.rank:
             raise ValueError("all adapters must cover the same modules with the same rank")
     pool_a = cb.build_pools(ref.sigma_a, ref.block_size, ref.n_bits)
     pool_b = cb.build_pools(ref.sigma_b, ref.block_size, ref.n_bits)

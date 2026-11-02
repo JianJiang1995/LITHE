@@ -37,7 +37,7 @@ artifacts/              evaluation prompts, per-prompt results, judge prompts
 ```bash
 git clone https://github.com/JianJiang1995/LITHE.git lithe && cd lithe
 pip install -e .            # core: codebook, quantiser, index files, CPU tests
-pip install -e ".[flux]"    # + diffusers / transformers / peft for FLUX.1-dev
+pip install -e ".[flux,test]"  # + diffusers / transformers / peft for FLUX.1-dev, and pytest
 # or exactly the reference environment:
 pip install -r requirements.txt
 ```
