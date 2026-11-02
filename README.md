@@ -4,11 +4,57 @@ Reference code for the NeurIPS 2026 paper (to appear) by Jian Jiang, Oya Celiktu
 
 Code: https://github.com/JianJiang1995/LITHE. Pretrained index files: https://huggingface.co/Fanjue/LITHE.
 
+![LITHE serving overview](assets/teaser.jpg)
+
+*Co-resident index-bank serving with per-sample routing: 10,000 adapters resident as bit-packed indices on one A100 80 GB, and 14 different adapters routed in one 1024^2 / 28-step FLUX.1-dev forward.*
+
 ## What LITHE is
 
 Diffusion personalization deployments serve growing catalogues of LoRA adapters, but resident-LoRA serving is capped near the GPU memory budget (about 150 rank-16 adapters on an A100 80 GB GPU running FLUX.1-dev). LITHE is a LoRA-compatible deployment representation that stores each adapter as an integer-index stream over a deterministic Hadamard codebook. The same on-disk indices drive two serving modes: an index-resident mode that routes a heterogeneous batch of adapters in one forward, and a decoded mode in which the indices are expanded into an ordinary LoRA. On disk, the rank-16 FLUX.1-dev adapters evaluated in the paper (Kohya-style, 304 fused linears including the modulation layers) average 3.23 MB as an LZMA-9 index stream, about 47x / 190x smaller than the matched bf16 r=16 / r=64 LoRA (153.3 / 612.6 MB). The default 342-module diffusers configuration of this release (attention and FFN linears, no modulation layers) averages 1.93 MB.
 
 Each LoRA factor A or B is cut into 64-value blocks. Every block is stored as three 9-bit codeword IDs (L = 3 residual levels, K = 512) that index a fixed codebook derived from the Sylvester-Hadamard matrix. A and B use the same codewords with different scales (the "twin" codebook): sigma_A = 0.06 on all levels and sigma_B = (0.0025, 0.001, 0.0005). Adapters are trained natively in the discrete space: fp32 proxy factors are quantised in the forward pass and updated through a straight-through estimator, with lazy re-quantisation every 10 forwards. The codebook is a procedural constant (0 KB per adapter, nothing learned), and the decode of a block is a closed-form sum of scaled Hadamard sign vectors.
+
+![LITHE adapter format](assets/method.png)
+
+*Each LoRA factor is split into 64-value blocks; each block is stored as three 9-bit IDs into a fixed Hadamard sign codebook, so an adapter is only an index stream.*
+
+## Results
+
+All numbers are from the paper (FLUX.1-dev, rank 16, one A100 80 GB). Quality is the three-judge LLM average (GPT-5.1, Claude Sonnet 4.6, Gemini 2.5 Flash; 1 to 5) and DreamSim to the reference images, mean ± over three training seeds. Storage is each method's own adapter file.
+
+| Method | Storage (MB) | DreamBooth-30 LLM-avg / DreamSim | CC101-20 | SCIdentity | SC-40 |
+|---|---:|---|---|---|---|
+| FLUX.1-dev, no adapter | 0 | 3.33 / 0.41 | 3.37 / 0.43 | 3.98 / 0.43 | 3.53 / 0.42 |
+| LoRA | 153.3 | 4.56 / 0.67 | 4.19 / 0.62 | 4.48 / 0.69 | 3.94 / 0.55 |
+| DoRA | 92.6 | 3.72 / 0.50 | 3.68 / 0.48 | 3.48 / 0.48 | 3.17 / 0.46 |
+| VeRA | 0.022 | 3.58 / 0.49 | 3.51 / 0.49 | 3.39 / 0.49 | 3.04 / 0.47 |
+| AdaLoRA | 67.4 | 3.88 / 0.43 | 3.95 / 0.43 | 3.80 / 0.43 | 3.22 / 0.42 |
+| QLoRA-NF4 | 22 | 3.86 / 0.56 | 3.69 / 0.55 | 3.70 / 0.58 | 3.48 / 0.53 |
+| DyLoRA | 153.3 | 4.26 / 0.54 | 3.99 / 0.48 | 4.03 / 0.57 | 3.63 / 0.49 |
+| LoRA-FA | 153.3 | 4.42 / 0.59 | 4.08 / 0.54 | 4.26 / 0.63 | 3.85 / 0.53 |
+| LoRA-XS | 52.3 | 3.75 / 0.46 | 3.78 / 0.45 | 3.56 / 0.46 | 2.98 / 0.43 |
+| T-LoRA | 157.1 | 4.14 / 0.56 | 4.02 / 0.52 | 3.90 / 0.54 | 3.64 / 0.50 |
+| **LITHE (Ours)** | 3.23 | 4.42 / 0.60 | 4.14 / 0.56 | 4.30 / 0.65 | 3.77 / 0.53 |
+
+Serving (FLUX.1-dev bf16, one A100 80 GB):
+
+| | Value |
+|---|---|
+| Resident adapters, LITHE bit-packed indices | 10,000 at 75.7 GB peak (4.19 MB per slot) |
+| Resident adapters, dense rank-16 LoRA, same B=14 1024^2 render | 156 |
+| Wall time, 1024^2 / 28 steps, B=14 heterogeneous | LITHE 133.4 s vs LoRA+compile 132.4 s vs serial fuse 195.3 s |
+| Wall time, 512^2 / 16 steps, B=14 | LITHE 18.08 s vs LoRA+compile 19.28 s vs serial fuse 43.3 s |
+| Wall time, 256^2 / 4 steps, B=96 | LITHE 11.00 s vs LoRA+compile 15.59 s vs serial fuse 150.0 s |
+
+![Same-batch heterogeneous serving](assets/bmax_sweep.png)
+
+*Peak VRAM vs. number of different LITHE adapters in one batch.*
+
+![Three-adapter composition](assets/three_lora_composition.jpg)
+
+*Subject, style and lighting adapters composed in one batched forward (DreamBooth cat and dog subjects with SC-40 style and lighting adapters).*
+
+Per-prompt scores behind the quality table are in [`artifacts/results/`](artifacts/results/), and `artifacts/results/aggregate.py --table1` recomputes it.
 
 ## Repository layout
 
