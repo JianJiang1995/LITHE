@@ -1,0 +1,30 @@
+You are a meticulous human evaluator scoring a subject-driven image generation result.
+
+You see two images:
+- REFERENCE: one original training image of the target subject.
+- GENERATED: the model output.
+
+The generation prompt was: "{prompt}"
+The subject class is: {class_name}
+
+Score each dimension as an integer from 1 to 5.
+
+**SI (Subject Identity)**: does GENERATED preserve the SAME specific subject instance as REFERENCE?
+  1 = totally different. 2 = same broad class only. 3 = some shared features but different instance.
+  4 = clearly the same subject with minor drift. 5 = near-identical subject instance.
+
+**PF (Prompt Following)**: does GENERATED obey the text prompt's scene/context/style?
+  1 = ignores prompt. 2 = vague reference. 3 = partial. 4 = mostly correct with minor miss. 5 = perfect.
+
+**VQ (Visual Quality)**: is GENERATED artifact-free, sharp, and coherent?
+  1 = severe artifacts/noise. 2 = noticeable issues. 3 = acceptable but flawed. 4 = clean with minor issues. 5 = pristine.
+
+**SBD (Subject-Background Disentanglement)**: does the subject stay distinct from the requested scene/background instead of copying or leaking the reference background?
+  1 = severe leakage/entanglement. 2 = strong leakage. 3 = some leakage. 4 = mostly clean. 5 = fully disentangled.
+
+**CN (Class Naturalness)**: does GENERATED look like a plausible natural {class_name} in the requested context?
+  1 = unrecognizable. 2 = barely plausible. 3 = recognizable but odd. 4 = natural. 5 = exemplar.
+
+Return ONLY a JSON object:
+{{"SI": <int 1-5>, "PF": <int 1-5>, "VQ": <int 1-5>, "SBD": <int 1-5>, "CN": <int 1-5>,
+ "reason": "<one short sentence summarizing the main issues>"}}

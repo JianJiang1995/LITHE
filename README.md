@@ -29,6 +29,7 @@ scripts/
   cpu_smoke.py          end-to-end toy pipeline on CPU, no FLUX weights
 configs/flux_lithe_default.yaml   paper default hyperparameters
 tests/                  pytest suite, CPU only
+artifacts/              evaluation prompts, per-prompt results, judge prompts
 ```
 
 ## Install
@@ -161,11 +162,19 @@ The index stream is little-endian uint16: the A-side indices of all modules in h
 
 Coming soon (TODO): the 110 rank-16 adapters evaluated in the paper (DreamBooth-30, CC101-20, SCIdentity, SC-40) will be published on Hugging Face at [Fanjue/LITHE](https://huggingface.co/Fanjue/LITHE) as `.lithe` files; the repository is not populated yet. They use the Kohya 304-module layout (header `module_set = kohya-304`), decode with `scripts/decode_to_lora.py` to Kohya-keyed LoRA files that `FluxPipeline.load_lora_weights` loads, and require FLUX.1-dev.
 
+## Paper artifacts
+
+`artifacts/` holds the evaluation data behind Table 1 and the multi-seed appendix tables (text and CSV only, no images):
+
+* `artifacts/prompts/`: per-concept evaluation prompt lists for DreamBooth-30, CC101-20, SCIdentity and SC-40 (concept id, trigger, class, prompt index, prompt text).
+* `artifacts/results/`: per-prompt scores of every Table 1 row and run (all rubric dimensions of GPT-5.1, Claude Sonnet 4.6 and Gemini 2.5 Flash, their consensus, DreamSim, CLIP-I, CLIP-T; vanilla FLUX is scored by GPT-5.1 only), with `aggregate.py`, which recomputes the table entries. Columns, aggregation and the check against the paper are in `artifacts/results/README.md`.
+* `artifacts/judge/`: the verbatim judge prompt templates and `judge.py`, a minimal judge for one image against an OpenAI-compatible API (`OPENAI_API_KEY`, `OPENAI_BASE_URL`).
+
 ## Scope of this release and notes on reproduction
 
 * Included: the codebook, native STE training on FLUX.1-dev (diffusers), index files, decoding to standard LoRA, inference, and a PyTorch reference of index-resident multi-adapter routing.
 * Data: the synthetic benchmarks SCIdentity and SC-40 are not part of this release; their data-generation protocol is described in the paper appendix. DreamBooth and CustomConcept101 are available from their original authors.
-* Not included: the fused Triton kernels, the serving / wall-time benchmark harness, the cross-architecture (SDXL, Qwen-Image) trainers, and evaluation scripts. The LLM-judge rubrics and prompts are given in the paper appendix; the judge itself calls a paid API and is not shipped. TODO: release DreamSim / CLIP evaluation scripts.
+* Not included: the fused Triton kernels, the serving / wall-time benchmark harness, the cross-architecture (SDXL, Qwen-Image) trainers, and evaluation scripts. The LLM-judge prompts and a minimal judge script are in `artifacts/judge/` (the judges are paid proprietary APIs, so rescoring may drift from the released scores). TODO: release DreamSim / CLIP evaluation scripts.
 * Some paper tables were produced with a Kohya sd-scripts network module that applies the same codebook to the fused FLUX linears (304 modules including the modulation linears). `scripts/encode.py --checkpoint` imports such index files and `scripts/decode_to_lora.py` writes them with Kohya keys, which `load_lora_weights` converts. TODO: port of the Kohya training module.
 * Training differs from a numerical replay of the paper runs in implementation details (single-process loop instead of accelerate, per-module drift trigger). The quantiser, codebook, STE and schedule follow the paper.
 

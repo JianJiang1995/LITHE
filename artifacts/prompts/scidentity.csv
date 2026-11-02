@@ -1,0 +1,201 @@
+benchmark,prompt_set,concept_id,trigger,class_name,prompt_idx,prompt
+scidentity,trigger,amber_antler_red_panda,<v_id_007>,animal,0,a photo of a <v_id_007> animal
+scidentity,trigger,amber_antler_red_panda,<v_id_007>,animal,1,"a <v_id_007> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,amber_antler_red_panda,<v_id_007>,animal,2,a <v_id_007> animal walking through a city street at night
+scidentity,trigger,amber_antler_red_panda,<v_id_007>,animal,3,"a <v_id_007> animal wearing a top hat, sharp focus"
+scidentity,trigger,amber_antler_red_panda,<v_id_007>,animal,4,a close-up portrait of a <v_id_007> animal with cherry blossoms
+scidentity,trigger,basalt_scale_pangolin_dog,<v_id_005>,animal,0,a photo of a <v_id_005> animal
+scidentity,trigger,basalt_scale_pangolin_dog,<v_id_005>,animal,1,"a <v_id_005> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,basalt_scale_pangolin_dog,<v_id_005>,animal,2,a <v_id_005> animal walking through a city street at night
+scidentity,trigger,basalt_scale_pangolin_dog,<v_id_005>,animal,3,"a <v_id_005> animal wearing a top hat, sharp focus"
+scidentity,trigger,basalt_scale_pangolin_dog,<v_id_005>,animal,4,a close-up portrait of a <v_id_005> animal with cherry blossoms
+scidentity,trigger,blueglass_hoofed_penguin,<v_id_015>,animal,0,a photo of a <v_id_015> animal
+scidentity,trigger,blueglass_hoofed_penguin,<v_id_015>,animal,1,"a <v_id_015> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,blueglass_hoofed_penguin,<v_id_015>,animal,2,a <v_id_015> animal walking through a city street at night
+scidentity,trigger,blueglass_hoofed_penguin,<v_id_015>,animal,3,"a <v_id_015> animal wearing a top hat, sharp focus"
+scidentity,trigger,blueglass_hoofed_penguin,<v_id_015>,animal,4,a close-up portrait of a <v_id_015> animal with cherry blossoms
+scidentity,trigger,copper_leaf_koala_moth,<v_id_020>,animal,0,a photo of a <v_id_020> animal
+scidentity,trigger,copper_leaf_koala_moth,<v_id_020>,animal,1,"a <v_id_020> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,copper_leaf_koala_moth,<v_id_020>,animal,2,a <v_id_020> animal walking through a city street at night
+scidentity,trigger,copper_leaf_koala_moth,<v_id_020>,animal,3,"a <v_id_020> animal wearing a top hat, sharp focus"
+scidentity,trigger,copper_leaf_koala_moth,<v_id_020>,animal,4,a close-up portrait of a <v_id_020> animal with cherry blossoms
+scidentity,trigger,coral_frill_seal_pup,<v_id_013>,animal,0,a photo of a <v_id_013> animal
+scidentity,trigger,coral_frill_seal_pup,<v_id_013>,animal,1,"a <v_id_013> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,coral_frill_seal_pup,<v_id_013>,animal,2,a <v_id_013> animal walking through a city street at night
+scidentity,trigger,coral_frill_seal_pup,<v_id_013>,animal,3,"a <v_id_013> animal wearing a top hat, sharp focus"
+scidentity,trigger,coral_frill_seal_pup,<v_id_013>,animal,4,a close-up portrait of a <v_id_013> animal with cherry blossoms
+scidentity,trigger,crystal_whisker_otter,<v_id_008>,animal,0,a photo of a <v_id_008> animal
+scidentity,trigger,crystal_whisker_otter,<v_id_008>,animal,1,"a <v_id_008> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,crystal_whisker_otter,<v_id_008>,animal,2,a <v_id_008> animal walking through a city street at night
+scidentity,trigger,crystal_whisker_otter,<v_id_008>,animal,3,"a <v_id_008> animal wearing a top hat, sharp focus"
+scidentity,trigger,crystal_whisker_otter,<v_id_008>,animal,4,a close-up portrait of a <v_id_008> animal with cherry blossoms
+scidentity,trigger,glass_gill_axolotl_cat,<v_id_002>,animal,0,a photo of a <v_id_002> animal
+scidentity,trigger,glass_gill_axolotl_cat,<v_id_002>,animal,1,"a <v_id_002> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,glass_gill_axolotl_cat,<v_id_002>,animal,2,a <v_id_002> animal walking through a city street at night
+scidentity,trigger,glass_gill_axolotl_cat,<v_id_002>,animal,3,"a <v_id_002> animal wearing a top hat, sharp focus"
+scidentity,trigger,glass_gill_axolotl_cat,<v_id_002>,animal,4,a close-up portrait of a <v_id_002> animal with cherry blossoms
+scidentity,trigger,jade_beaked_sable_kite,<v_id_011>,animal,0,a photo of a <v_id_011> animal
+scidentity,trigger,jade_beaked_sable_kite,<v_id_011>,animal,1,"a <v_id_011> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,jade_beaked_sable_kite,<v_id_011>,animal,2,a <v_id_011> animal walking through a city street at night
+scidentity,trigger,jade_beaked_sable_kite,<v_id_011>,animal,3,"a <v_id_011> animal wearing a top hat, sharp focus"
+scidentity,trigger,jade_beaked_sable_kite,<v_id_011>,animal,4,a close-up portrait of a <v_id_011> animal with cherry blossoms
+scidentity,trigger,lilac_mane_snow_lion_cub,<v_id_010>,animal,0,a photo of a <v_id_010> animal
+scidentity,trigger,lilac_mane_snow_lion_cub,<v_id_010>,animal,1,"a <v_id_010> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,lilac_mane_snow_lion_cub,<v_id_010>,animal,2,a <v_id_010> animal walking through a city street at night
+scidentity,trigger,lilac_mane_snow_lion_cub,<v_id_010>,animal,3,"a <v_id_010> animal wearing a top hat, sharp focus"
+scidentity,trigger,lilac_mane_snow_lion_cub,<v_id_010>,animal,4,a close-up portrait of a <v_id_010> animal with cherry blossoms
+scidentity,trigger,marble_shell_raccoon_turtle,<v_id_009>,animal,0,a photo of a <v_id_009> animal
+scidentity,trigger,marble_shell_raccoon_turtle,<v_id_009>,animal,1,"a <v_id_009> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,marble_shell_raccoon_turtle,<v_id_009>,animal,2,a <v_id_009> animal walking through a city street at night
+scidentity,trigger,marble_shell_raccoon_turtle,<v_id_009>,animal,3,"a <v_id_009> animal wearing a top hat, sharp focus"
+scidentity,trigger,marble_shell_raccoon_turtle,<v_id_009>,animal,4,a close-up portrait of a <v_id_009> animal with cherry blossoms
+scidentity,trigger,moss_backed_moon_hare,<v_id_003>,animal,0,a photo of a <v_id_003> animal
+scidentity,trigger,moss_backed_moon_hare,<v_id_003>,animal,1,"a <v_id_003> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,moss_backed_moon_hare,<v_id_003>,animal,2,a <v_id_003> animal walking through a city street at night
+scidentity,trigger,moss_backed_moon_hare,<v_id_003>,animal,3,"a <v_id_003> animal wearing a top hat, sharp focus"
+scidentity,trigger,moss_backed_moon_hare,<v_id_003>,animal,4,a close-up portrait of a <v_id_003> animal with cherry blossoms
+scidentity,trigger,obsidian_mask_lynx,<v_id_014>,animal,0,a photo of a <v_id_014> animal
+scidentity,trigger,obsidian_mask_lynx,<v_id_014>,animal,1,"a <v_id_014> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,obsidian_mask_lynx,<v_id_014>,animal,2,a <v_id_014> animal walking through a city street at night
+scidentity,trigger,obsidian_mask_lynx,<v_id_014>,animal,3,"a <v_id_014> animal wearing a top hat, sharp focus"
+scidentity,trigger,obsidian_mask_lynx,<v_id_014>,animal,4,a close-up portrait of a <v_id_014> animal with cherry blossoms
+scidentity,trigger,opal_horned_arctic_fox,<v_id_001>,animal,0,a photo of a <v_id_001> animal
+scidentity,trigger,opal_horned_arctic_fox,<v_id_001>,animal,1,"a <v_id_001> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,opal_horned_arctic_fox,<v_id_001>,animal,2,a <v_id_001> animal walking through a city street at night
+scidentity,trigger,opal_horned_arctic_fox,<v_id_001>,animal,3,"a <v_id_001> animal wearing a top hat, sharp focus"
+scidentity,trigger,opal_horned_arctic_fox,<v_id_001>,animal,4,a close-up portrait of a <v_id_001> animal with cherry blossoms
+scidentity,trigger,pearl_spotted_dune_fennec,<v_id_012>,animal,0,a photo of a <v_id_012> animal
+scidentity,trigger,pearl_spotted_dune_fennec,<v_id_012>,animal,1,"a <v_id_012> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,pearl_spotted_dune_fennec,<v_id_012>,animal,2,a <v_id_012> animal walking through a city street at night
+scidentity,trigger,pearl_spotted_dune_fennec,<v_id_012>,animal,3,"a <v_id_012> animal wearing a top hat, sharp focus"
+scidentity,trigger,pearl_spotted_dune_fennec,<v_id_012>,animal,4,a close-up portrait of a <v_id_012> animal with cherry blossoms
+scidentity,trigger,porcelain_manta_pup,<v_id_004>,animal,0,a photo of a <v_id_004> animal
+scidentity,trigger,porcelain_manta_pup,<v_id_004>,animal,1,"a <v_id_004> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,porcelain_manta_pup,<v_id_004>,animal,2,a <v_id_004> animal walking through a city street at night
+scidentity,trigger,porcelain_manta_pup,<v_id_004>,animal,3,"a <v_id_004> animal wearing a top hat, sharp focus"
+scidentity,trigger,porcelain_manta_pup,<v_id_004>,animal,4,a close-up portrait of a <v_id_004> animal with cherry blossoms
+scidentity,trigger,rose_quartz_bat_lemur,<v_id_019>,animal,0,a photo of a <v_id_019> animal
+scidentity,trigger,rose_quartz_bat_lemur,<v_id_019>,animal,1,"a <v_id_019> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,rose_quartz_bat_lemur,<v_id_019>,animal,2,a <v_id_019> animal walking through a city street at night
+scidentity,trigger,rose_quartz_bat_lemur,<v_id_019>,animal,3,"a <v_id_019> animal wearing a top hat, sharp focus"
+scidentity,trigger,rose_quartz_bat_lemur,<v_id_019>,animal,4,a close-up portrait of a <v_id_019> animal with cherry blossoms
+scidentity,trigger,sapphire_ringed_owl_ferret,<v_id_006>,animal,0,a photo of a <v_id_006> animal
+scidentity,trigger,sapphire_ringed_owl_ferret,<v_id_006>,animal,1,"a <v_id_006> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,sapphire_ringed_owl_ferret,<v_id_006>,animal,2,a <v_id_006> animal walking through a city street at night
+scidentity,trigger,sapphire_ringed_owl_ferret,<v_id_006>,animal,3,"a <v_id_006> animal wearing a top hat, sharp focus"
+scidentity,trigger,sapphire_ringed_owl_ferret,<v_id_006>,animal,4,a close-up portrait of a <v_id_006> animal with cherry blossoms
+scidentity,trigger,silver_fin_forest_goat,<v_id_018>,animal,0,a photo of a <v_id_018> animal
+scidentity,trigger,silver_fin_forest_goat,<v_id_018>,animal,1,"a <v_id_018> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,silver_fin_forest_goat,<v_id_018>,animal,2,a <v_id_018> animal walking through a city street at night
+scidentity,trigger,silver_fin_forest_goat,<v_id_018>,animal,3,"a <v_id_018> animal wearing a top hat, sharp focus"
+scidentity,trigger,silver_fin_forest_goat,<v_id_018>,animal,4,a close-up portrait of a <v_id_018> animal with cherry blossoms
+scidentity,trigger,sunspot_quokka_dragonet,<v_id_016>,animal,0,a photo of a <v_id_016> animal
+scidentity,trigger,sunspot_quokka_dragonet,<v_id_016>,animal,1,"a <v_id_016> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,sunspot_quokka_dragonet,<v_id_016>,animal,2,a <v_id_016> animal walking through a city street at night
+scidentity,trigger,sunspot_quokka_dragonet,<v_id_016>,animal,3,"a <v_id_016> animal wearing a top hat, sharp focus"
+scidentity,trigger,sunspot_quokka_dragonet,<v_id_016>,animal,4,a close-up portrait of a <v_id_016> animal with cherry blossoms
+scidentity,trigger,violet_spine_hedgehog_deer,<v_id_017>,animal,0,a photo of a <v_id_017> animal
+scidentity,trigger,violet_spine_hedgehog_deer,<v_id_017>,animal,1,"a <v_id_017> animal sitting on a wooden chair, studio lighting"
+scidentity,trigger,violet_spine_hedgehog_deer,<v_id_017>,animal,2,a <v_id_017> animal walking through a city street at night
+scidentity,trigger,violet_spine_hedgehog_deer,<v_id_017>,animal,3,"a <v_id_017> animal wearing a top hat, sharp focus"
+scidentity,trigger,violet_spine_hedgehog_deer,<v_id_017>,animal,4,a close-up portrait of a <v_id_017> animal with cherry blossoms
+scidentity,legacy_sks,amber_antler_red_panda,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,amber_antler_red_panda,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,amber_antler_red_panda,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,amber_antler_red_panda,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,amber_antler_red_panda,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,basalt_scale_pangolin_dog,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,basalt_scale_pangolin_dog,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,basalt_scale_pangolin_dog,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,basalt_scale_pangolin_dog,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,basalt_scale_pangolin_dog,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,blueglass_hoofed_penguin,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,blueglass_hoofed_penguin,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,blueglass_hoofed_penguin,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,blueglass_hoofed_penguin,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,blueglass_hoofed_penguin,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,copper_leaf_koala_moth,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,copper_leaf_koala_moth,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,copper_leaf_koala_moth,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,copper_leaf_koala_moth,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,copper_leaf_koala_moth,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,coral_frill_seal_pup,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,coral_frill_seal_pup,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,coral_frill_seal_pup,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,coral_frill_seal_pup,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,coral_frill_seal_pup,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,crystal_whisker_otter,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,crystal_whisker_otter,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,crystal_whisker_otter,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,crystal_whisker_otter,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,crystal_whisker_otter,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,glass_gill_axolotl_cat,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,glass_gill_axolotl_cat,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,glass_gill_axolotl_cat,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,glass_gill_axolotl_cat,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,glass_gill_axolotl_cat,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,jade_beaked_sable_kite,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,jade_beaked_sable_kite,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,jade_beaked_sable_kite,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,jade_beaked_sable_kite,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,jade_beaked_sable_kite,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,lilac_mane_snow_lion_cub,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,lilac_mane_snow_lion_cub,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,lilac_mane_snow_lion_cub,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,lilac_mane_snow_lion_cub,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,lilac_mane_snow_lion_cub,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,marble_shell_raccoon_turtle,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,marble_shell_raccoon_turtle,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,marble_shell_raccoon_turtle,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,marble_shell_raccoon_turtle,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,marble_shell_raccoon_turtle,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,moss_backed_moon_hare,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,moss_backed_moon_hare,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,moss_backed_moon_hare,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,moss_backed_moon_hare,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,moss_backed_moon_hare,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,obsidian_mask_lynx,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,obsidian_mask_lynx,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,obsidian_mask_lynx,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,obsidian_mask_lynx,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,obsidian_mask_lynx,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,opal_horned_arctic_fox,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,opal_horned_arctic_fox,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,opal_horned_arctic_fox,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,opal_horned_arctic_fox,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,opal_horned_arctic_fox,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,pearl_spotted_dune_fennec,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,pearl_spotted_dune_fennec,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,pearl_spotted_dune_fennec,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,pearl_spotted_dune_fennec,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,pearl_spotted_dune_fennec,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,porcelain_manta_pup,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,porcelain_manta_pup,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,porcelain_manta_pup,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,porcelain_manta_pup,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,porcelain_manta_pup,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,rose_quartz_bat_lemur,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,rose_quartz_bat_lemur,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,rose_quartz_bat_lemur,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,rose_quartz_bat_lemur,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,rose_quartz_bat_lemur,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,sapphire_ringed_owl_ferret,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,sapphire_ringed_owl_ferret,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,sapphire_ringed_owl_ferret,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,sapphire_ringed_owl_ferret,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,sapphire_ringed_owl_ferret,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,silver_fin_forest_goat,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,silver_fin_forest_goat,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,silver_fin_forest_goat,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,silver_fin_forest_goat,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,silver_fin_forest_goat,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,sunspot_quokka_dragonet,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,sunspot_quokka_dragonet,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,sunspot_quokka_dragonet,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,sunspot_quokka_dragonet,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,sunspot_quokka_dragonet,sks,animal,4,a photo of a sks animal with a city in the background
+scidentity,legacy_sks,violet_spine_hedgehog_deer,sks,animal,0,a photo of a sks animal
+scidentity,legacy_sks,violet_spine_hedgehog_deer,sks,animal,1,a photo of a sks animal in a forest
+scidentity,legacy_sks,violet_spine_hedgehog_deer,sks,animal,2,a photo of a sks animal on a beach
+scidentity,legacy_sks,violet_spine_hedgehog_deer,sks,animal,3,a photo of a sks animal on a cobblestone street
+scidentity,legacy_sks,violet_spine_hedgehog_deer,sks,animal,4,a photo of a sks animal with a city in the background

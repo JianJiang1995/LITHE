@@ -1,0 +1,301 @@
+benchmark,prompt_set,concept_id,trigger,class_name,prompt_idx,prompt
+cc101_20,trigger,cc_000_actionfigure,<v_sub_C001>,actionfigure,0,a photo of a <v_sub_C001> actionfigure
+cc101_20,trigger,cc_000_actionfigure,<v_sub_C001>,actionfigure,1,"a <v_sub_C001> actionfigure sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_000_actionfigure,<v_sub_C001>,actionfigure,2,a <v_sub_C001> actionfigure walking through a city street at night
+cc101_20,trigger,cc_000_actionfigure,<v_sub_C001>,actionfigure,3,"a <v_sub_C001> actionfigure wearing a top hat, sharp focus"
+cc101_20,trigger,cc_000_actionfigure,<v_sub_C001>,actionfigure,4,a close-up portrait of a <v_sub_C001> actionfigure with cherry blossoms
+cc101_20,trigger,cc_004_barn,<v_sub_C002>,barn,0,a photo of a <v_sub_C002> barn
+cc101_20,trigger,cc_004_barn,<v_sub_C002>,barn,1,"a <v_sub_C002> barn sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_004_barn,<v_sub_C002>,barn,2,a <v_sub_C002> barn walking through a city street at night
+cc101_20,trigger,cc_004_barn,<v_sub_C002>,barn,3,"a <v_sub_C002> barn wearing a top hat, sharp focus"
+cc101_20,trigger,cc_004_barn,<v_sub_C002>,barn,4,a close-up portrait of a <v_sub_C002> barn with cherry blossoms
+cc101_20,trigger,cc_005_bear,<v_sub_C003>,bear,0,a photo of a <v_sub_C003> bear
+cc101_20,trigger,cc_005_bear,<v_sub_C003>,bear,1,"a <v_sub_C003> bear sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_005_bear,<v_sub_C003>,bear,2,a <v_sub_C003> bear walking through a city street at night
+cc101_20,trigger,cc_005_bear,<v_sub_C003>,bear,3,"a <v_sub_C003> bear wearing a top hat, sharp focus"
+cc101_20,trigger,cc_005_bear,<v_sub_C003>,bear,4,a close-up portrait of a <v_sub_C003> bear with cherry blossoms
+cc101_20,trigger,cc_006_bike,<v_sub_C004>,bike,0,a photo of a <v_sub_C004> bike
+cc101_20,trigger,cc_006_bike,<v_sub_C004>,bike,1,"a <v_sub_C004> bike sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_006_bike,<v_sub_C004>,bike,2,a <v_sub_C004> bike walking through a city street at night
+cc101_20,trigger,cc_006_bike,<v_sub_C004>,bike,3,"a <v_sub_C004> bike wearing a top hat, sharp focus"
+cc101_20,trigger,cc_006_bike,<v_sub_C004>,bike,4,a close-up portrait of a <v_sub_C004> bike with cherry blossoms
+cc101_20,trigger,cc_009_bottle,<v_sub_C005>,bottle,0,a photo of a <v_sub_C005> bottle
+cc101_20,trigger,cc_009_bottle,<v_sub_C005>,bottle,1,"a <v_sub_C005> bottle sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_009_bottle,<v_sub_C005>,bottle,2,a <v_sub_C005> bottle walking through a city street at night
+cc101_20,trigger,cc_009_bottle,<v_sub_C005>,bottle,3,"a <v_sub_C005> bottle wearing a top hat, sharp focus"
+cc101_20,trigger,cc_009_bottle,<v_sub_C005>,bottle,4,a close-up portrait of a <v_sub_C005> bottle with cherry blossoms
+cc101_20,trigger,cc_010_bunny,<v_sub_C006>,bunny,0,a photo of a <v_sub_C006> bunny
+cc101_20,trigger,cc_010_bunny,<v_sub_C006>,bunny,1,"a <v_sub_C006> bunny sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_010_bunny,<v_sub_C006>,bunny,2,a <v_sub_C006> bunny walking through a city street at night
+cc101_20,trigger,cc_010_bunny,<v_sub_C006>,bunny,3,"a <v_sub_C006> bunny wearing a top hat, sharp focus"
+cc101_20,trigger,cc_010_bunny,<v_sub_C006>,bunny,4,a close-up portrait of a <v_sub_C006> bunny with cherry blossoms
+cc101_20,trigger,cc_023_castle,<v_sub_C007>,castle,0,a photo of a <v_sub_C007> castle
+cc101_20,trigger,cc_023_castle,<v_sub_C007>,castle,1,"a <v_sub_C007> castle sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_023_castle,<v_sub_C007>,castle,2,a <v_sub_C007> castle walking through a city street at night
+cc101_20,trigger,cc_023_castle,<v_sub_C007>,castle,3,"a <v_sub_C007> castle wearing a top hat, sharp focus"
+cc101_20,trigger,cc_023_castle,<v_sub_C007>,castle,4,a close-up portrait of a <v_sub_C007> castle with cherry blossoms
+cc101_20,trigger,cc_024_cat,<v_sub_C008>,cat,0,a photo of a <v_sub_C008> cat
+cc101_20,trigger,cc_024_cat,<v_sub_C008>,cat,1,"a <v_sub_C008> cat sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_024_cat,<v_sub_C008>,cat,2,a <v_sub_C008> cat walking through a city street at night
+cc101_20,trigger,cc_024_cat,<v_sub_C008>,cat,3,"a <v_sub_C008> cat wearing a top hat, sharp focus"
+cc101_20,trigger,cc_024_cat,<v_sub_C008>,cat,4,a close-up portrait of a <v_sub_C008> cat with cherry blossoms
+cc101_20,trigger,cc_034_corkscrew,<v_sub_C009>,corkscrew,0,a photo of a <v_sub_C009> corkscrew
+cc101_20,trigger,cc_034_corkscrew,<v_sub_C009>,corkscrew,1,"a <v_sub_C009> corkscrew sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_034_corkscrew,<v_sub_C009>,corkscrew,2,a <v_sub_C009> corkscrew walking through a city street at night
+cc101_20,trigger,cc_034_corkscrew,<v_sub_C009>,corkscrew,3,"a <v_sub_C009> corkscrew wearing a top hat, sharp focus"
+cc101_20,trigger,cc_034_corkscrew,<v_sub_C009>,corkscrew,4,a close-up portrait of a <v_sub_C009> corkscrew with cherry blossoms
+cc101_20,trigger,cc_036_cup,<v_sub_C010>,cup,0,a photo of a <v_sub_C010> cup
+cc101_20,trigger,cc_036_cup,<v_sub_C010>,cup,1,"a <v_sub_C010> cup sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_036_cup,<v_sub_C010>,cup,2,a <v_sub_C010> cup walking through a city street at night
+cc101_20,trigger,cc_036_cup,<v_sub_C010>,cup,3,"a <v_sub_C010> cup wearing a top hat, sharp focus"
+cc101_20,trigger,cc_036_cup,<v_sub_C010>,cup,4,a close-up portrait of a <v_sub_C010> cup with cherry blossoms
+cc101_20,trigger,cc_042_dog,<v_sub_C011>,dog,0,a photo of a <v_sub_C011> dog
+cc101_20,trigger,cc_042_dog,<v_sub_C011>,dog,1,"a <v_sub_C011> dog sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_042_dog,<v_sub_C011>,dog,2,a <v_sub_C011> dog walking through a city street at night
+cc101_20,trigger,cc_042_dog,<v_sub_C011>,dog,3,"a <v_sub_C011> dog wearing a top hat, sharp focus"
+cc101_20,trigger,cc_042_dog,<v_sub_C011>,dog,4,a close-up portrait of a <v_sub_C011> dog with cherry blossoms
+cc101_20,trigger,cc_046_earring,<v_sub_C012>,earring,0,a photo of a <v_sub_C012> earring
+cc101_20,trigger,cc_046_earring,<v_sub_C012>,earring,1,"a <v_sub_C012> earring sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_046_earring,<v_sub_C012>,earring,2,a <v_sub_C012> earring walking through a city street at night
+cc101_20,trigger,cc_046_earring,<v_sub_C012>,earring,3,"a <v_sub_C012> earring wearing a top hat, sharp focus"
+cc101_20,trigger,cc_046_earring,<v_sub_C012>,earring,4,a close-up portrait of a <v_sub_C012> earring with cherry blossoms
+cc101_20,trigger,cc_047_flower,<v_sub_C013>,flower,0,a photo of a <v_sub_C013> flower
+cc101_20,trigger,cc_047_flower,<v_sub_C013>,flower,1,"a <v_sub_C013> flower sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_047_flower,<v_sub_C013>,flower,2,a <v_sub_C013> flower walking through a city street at night
+cc101_20,trigger,cc_047_flower,<v_sub_C013>,flower,3,"a <v_sub_C013> flower wearing a top hat, sharp focus"
+cc101_20,trigger,cc_047_flower,<v_sub_C013>,flower,4,a close-up portrait of a <v_sub_C013> flower with cherry blossoms
+cc101_20,trigger,cc_055_helmet,<v_sub_C014>,helmet,0,a photo of a <v_sub_C014> helmet
+cc101_20,trigger,cc_055_helmet,<v_sub_C014>,helmet,1,"a <v_sub_C014> helmet sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_055_helmet,<v_sub_C014>,helmet,2,a <v_sub_C014> helmet walking through a city street at night
+cc101_20,trigger,cc_055_helmet,<v_sub_C014>,helmet,3,"a <v_sub_C014> helmet wearing a top hat, sharp focus"
+cc101_20,trigger,cc_055_helmet,<v_sub_C014>,helmet,4,a close-up portrait of a <v_sub_C014> helmet with cherry blossoms
+cc101_20,trigger,cc_063_lamp,<v_sub_C015>,lamp,0,a photo of a <v_sub_C015> lamp
+cc101_20,trigger,cc_063_lamp,<v_sub_C015>,lamp,1,"a <v_sub_C015> lamp sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_063_lamp,<v_sub_C015>,lamp,2,a <v_sub_C015> lamp walking through a city street at night
+cc101_20,trigger,cc_063_lamp,<v_sub_C015>,lamp,3,"a <v_sub_C015> lamp wearing a top hat, sharp focus"
+cc101_20,trigger,cc_063_lamp,<v_sub_C015>,lamp,4,a close-up portrait of a <v_sub_C015> lamp with cherry blossoms
+cc101_20,trigger,cc_065_lobster,<v_sub_C016>,lobster,0,a photo of a <v_sub_C016> lobster
+cc101_20,trigger,cc_065_lobster,<v_sub_C016>,lobster,1,"a <v_sub_C016> lobster sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_065_lobster,<v_sub_C016>,lobster,2,a <v_sub_C016> lobster walking through a city street at night
+cc101_20,trigger,cc_065_lobster,<v_sub_C016>,lobster,3,"a <v_sub_C016> lobster wearing a top hat, sharp focus"
+cc101_20,trigger,cc_065_lobster,<v_sub_C016>,lobster,4,a close-up portrait of a <v_sub_C016> lobster with cherry blossoms
+cc101_20,trigger,cc_070_panda,<v_sub_C017>,panda,0,a photo of a <v_sub_C017> panda
+cc101_20,trigger,cc_070_panda,<v_sub_C017>,panda,1,"a <v_sub_C017> panda sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_070_panda,<v_sub_C017>,panda,2,a <v_sub_C017> panda walking through a city street at night
+cc101_20,trigger,cc_070_panda,<v_sub_C017>,panda,3,"a <v_sub_C017> panda wearing a top hat, sharp focus"
+cc101_20,trigger,cc_070_panda,<v_sub_C017>,panda,4,a close-up portrait of a <v_sub_C017> panda with cherry blossoms
+cc101_20,trigger,cc_075_pikachu,<v_sub_C018>,pikachu,0,a photo of a <v_sub_C018> pikachu
+cc101_20,trigger,cc_075_pikachu,<v_sub_C018>,pikachu,1,"a <v_sub_C018> pikachu sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_075_pikachu,<v_sub_C018>,pikachu,2,a <v_sub_C018> pikachu walking through a city street at night
+cc101_20,trigger,cc_075_pikachu,<v_sub_C018>,pikachu,3,"a <v_sub_C018> pikachu wearing a top hat, sharp focus"
+cc101_20,trigger,cc_075_pikachu,<v_sub_C018>,pikachu,4,a close-up portrait of a <v_sub_C018> pikachu with cherry blossoms
+cc101_20,trigger,cc_094_teddybear,<v_sub_C019>,teddybear,0,a photo of a <v_sub_C019> teddybear
+cc101_20,trigger,cc_094_teddybear,<v_sub_C019>,teddybear,1,"a <v_sub_C019> teddybear sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_094_teddybear,<v_sub_C019>,teddybear,2,a <v_sub_C019> teddybear walking through a city street at night
+cc101_20,trigger,cc_094_teddybear,<v_sub_C019>,teddybear,3,"a <v_sub_C019> teddybear wearing a top hat, sharp focus"
+cc101_20,trigger,cc_094_teddybear,<v_sub_C019>,teddybear,4,a close-up portrait of a <v_sub_C019> teddybear with cherry blossoms
+cc101_20,trigger,cc_098_vase,<v_sub_C020>,vase,0,a photo of a <v_sub_C020> vase
+cc101_20,trigger,cc_098_vase,<v_sub_C020>,vase,1,"a <v_sub_C020> vase sitting on a wooden chair, studio lighting"
+cc101_20,trigger,cc_098_vase,<v_sub_C020>,vase,2,a <v_sub_C020> vase walking through a city street at night
+cc101_20,trigger,cc_098_vase,<v_sub_C020>,vase,3,"a <v_sub_C020> vase wearing a top hat, sharp focus"
+cc101_20,trigger,cc_098_vase,<v_sub_C020>,vase,4,a close-up portrait of a <v_sub_C020> vase with cherry blossoms
+cc101_20,legacy_sks,cc_000_actionfigure,sks,actionfigure,0,a photo of a sks actionfigure
+cc101_20,legacy_sks,cc_000_actionfigure,sks,actionfigure,1,a photo of a sks actionfigure in a forest
+cc101_20,legacy_sks,cc_000_actionfigure,sks,actionfigure,2,a photo of a sks actionfigure on a beach
+cc101_20,legacy_sks,cc_000_actionfigure,sks,actionfigure,3,a photo of a sks actionfigure on a cobblestone street
+cc101_20,legacy_sks,cc_000_actionfigure,sks,actionfigure,4,a photo of a sks actionfigure with a city in the background
+cc101_20,legacy_sks,cc_004_barn,sks,barn,0,a photo of a sks barn
+cc101_20,legacy_sks,cc_004_barn,sks,barn,1,a photo of a sks barn in a forest
+cc101_20,legacy_sks,cc_004_barn,sks,barn,2,a photo of a sks barn on a beach
+cc101_20,legacy_sks,cc_004_barn,sks,barn,3,a photo of a sks barn on a cobblestone street
+cc101_20,legacy_sks,cc_004_barn,sks,barn,4,a photo of a sks barn with a city in the background
+cc101_20,legacy_sks,cc_005_bear,sks,bear,0,a photo of a sks bear
+cc101_20,legacy_sks,cc_005_bear,sks,bear,1,a photo of a sks bear in a forest
+cc101_20,legacy_sks,cc_005_bear,sks,bear,2,a photo of a sks bear on a beach
+cc101_20,legacy_sks,cc_005_bear,sks,bear,3,a photo of a sks bear on a cobblestone street
+cc101_20,legacy_sks,cc_005_bear,sks,bear,4,a photo of a sks bear with a city in the background
+cc101_20,legacy_sks,cc_006_bike,sks,bike,0,a photo of a sks bike
+cc101_20,legacy_sks,cc_006_bike,sks,bike,1,a photo of a sks bike in a forest
+cc101_20,legacy_sks,cc_006_bike,sks,bike,2,a photo of a sks bike on a beach
+cc101_20,legacy_sks,cc_006_bike,sks,bike,3,a photo of a sks bike on a cobblestone street
+cc101_20,legacy_sks,cc_006_bike,sks,bike,4,a photo of a sks bike with a city in the background
+cc101_20,legacy_sks,cc_009_bottle,sks,bottle,0,a photo of a sks bottle
+cc101_20,legacy_sks,cc_009_bottle,sks,bottle,1,a photo of a sks bottle in a forest
+cc101_20,legacy_sks,cc_009_bottle,sks,bottle,2,a photo of a sks bottle on a beach
+cc101_20,legacy_sks,cc_009_bottle,sks,bottle,3,a photo of a sks bottle on a cobblestone street
+cc101_20,legacy_sks,cc_009_bottle,sks,bottle,4,a photo of a sks bottle with a city in the background
+cc101_20,legacy_sks,cc_010_bunny,sks,bunny,0,a photo of a sks bunny
+cc101_20,legacy_sks,cc_010_bunny,sks,bunny,1,a photo of a sks bunny in a forest
+cc101_20,legacy_sks,cc_010_bunny,sks,bunny,2,a photo of a sks bunny on a beach
+cc101_20,legacy_sks,cc_010_bunny,sks,bunny,3,a photo of a sks bunny on a cobblestone street
+cc101_20,legacy_sks,cc_010_bunny,sks,bunny,4,a photo of a sks bunny with a city in the background
+cc101_20,legacy_sks,cc_023_castle,sks,castle,0,a photo of a sks castle
+cc101_20,legacy_sks,cc_023_castle,sks,castle,1,a photo of a sks castle in a forest
+cc101_20,legacy_sks,cc_023_castle,sks,castle,2,a photo of a sks castle on a beach
+cc101_20,legacy_sks,cc_023_castle,sks,castle,3,a photo of a sks castle on a cobblestone street
+cc101_20,legacy_sks,cc_023_castle,sks,castle,4,a photo of a sks castle with a city in the background
+cc101_20,legacy_sks,cc_024_cat,sks,cat,0,a photo of a sks cat
+cc101_20,legacy_sks,cc_024_cat,sks,cat,1,a photo of a sks cat in a forest
+cc101_20,legacy_sks,cc_024_cat,sks,cat,2,a photo of a sks cat on a beach
+cc101_20,legacy_sks,cc_024_cat,sks,cat,3,a photo of a sks cat on a cobblestone street
+cc101_20,legacy_sks,cc_024_cat,sks,cat,4,a photo of a sks cat with a city in the background
+cc101_20,legacy_sks,cc_034_corkscrew,sks,corkscrew,0,a photo of a sks corkscrew
+cc101_20,legacy_sks,cc_034_corkscrew,sks,corkscrew,1,a photo of a sks corkscrew in a forest
+cc101_20,legacy_sks,cc_034_corkscrew,sks,corkscrew,2,a photo of a sks corkscrew on a beach
+cc101_20,legacy_sks,cc_034_corkscrew,sks,corkscrew,3,a photo of a sks corkscrew on a cobblestone street
+cc101_20,legacy_sks,cc_034_corkscrew,sks,corkscrew,4,a photo of a sks corkscrew with a city in the background
+cc101_20,legacy_sks,cc_036_cup,sks,cup,0,a photo of a sks cup
+cc101_20,legacy_sks,cc_036_cup,sks,cup,1,a photo of a sks cup in a forest
+cc101_20,legacy_sks,cc_036_cup,sks,cup,2,a photo of a sks cup on a beach
+cc101_20,legacy_sks,cc_036_cup,sks,cup,3,a photo of a sks cup on a cobblestone street
+cc101_20,legacy_sks,cc_036_cup,sks,cup,4,a photo of a sks cup with a city in the background
+cc101_20,legacy_sks,cc_042_dog,sks,dog,0,a photo of a sks dog
+cc101_20,legacy_sks,cc_042_dog,sks,dog,1,a photo of a sks dog in a forest
+cc101_20,legacy_sks,cc_042_dog,sks,dog,2,a photo of a sks dog on a beach
+cc101_20,legacy_sks,cc_042_dog,sks,dog,3,a photo of a sks dog on a cobblestone street
+cc101_20,legacy_sks,cc_042_dog,sks,dog,4,a photo of a sks dog with a city in the background
+cc101_20,legacy_sks,cc_046_earring,sks,earring,0,a photo of a sks earring
+cc101_20,legacy_sks,cc_046_earring,sks,earring,1,a photo of a sks earring in a forest
+cc101_20,legacy_sks,cc_046_earring,sks,earring,2,a photo of a sks earring on a beach
+cc101_20,legacy_sks,cc_046_earring,sks,earring,3,a photo of a sks earring on a cobblestone street
+cc101_20,legacy_sks,cc_046_earring,sks,earring,4,a photo of a sks earring with a city in the background
+cc101_20,legacy_sks,cc_047_flower,sks,flower,0,a photo of a sks flower
+cc101_20,legacy_sks,cc_047_flower,sks,flower,1,a photo of a sks flower in a forest
+cc101_20,legacy_sks,cc_047_flower,sks,flower,2,a photo of a sks flower on a beach
+cc101_20,legacy_sks,cc_047_flower,sks,flower,3,a photo of a sks flower on a cobblestone street
+cc101_20,legacy_sks,cc_047_flower,sks,flower,4,a photo of a sks flower with a city in the background
+cc101_20,legacy_sks,cc_055_helmet,sks,helmet,0,a photo of a sks helmet
+cc101_20,legacy_sks,cc_055_helmet,sks,helmet,1,a photo of a sks helmet in a forest
+cc101_20,legacy_sks,cc_055_helmet,sks,helmet,2,a photo of a sks helmet on a beach
+cc101_20,legacy_sks,cc_055_helmet,sks,helmet,3,a photo of a sks helmet on a cobblestone street
+cc101_20,legacy_sks,cc_055_helmet,sks,helmet,4,a photo of a sks helmet with a city in the background
+cc101_20,legacy_sks,cc_063_lamp,sks,lamp,0,a photo of a sks lamp
+cc101_20,legacy_sks,cc_063_lamp,sks,lamp,1,a photo of a sks lamp in a forest
+cc101_20,legacy_sks,cc_063_lamp,sks,lamp,2,a photo of a sks lamp on a beach
+cc101_20,legacy_sks,cc_063_lamp,sks,lamp,3,a photo of a sks lamp on a cobblestone street
+cc101_20,legacy_sks,cc_063_lamp,sks,lamp,4,a photo of a sks lamp with a city in the background
+cc101_20,legacy_sks,cc_065_lobster,sks,lobster,0,a photo of a sks lobster
+cc101_20,legacy_sks,cc_065_lobster,sks,lobster,1,a photo of a sks lobster in a forest
+cc101_20,legacy_sks,cc_065_lobster,sks,lobster,2,a photo of a sks lobster on a beach
+cc101_20,legacy_sks,cc_065_lobster,sks,lobster,3,a photo of a sks lobster on a cobblestone street
+cc101_20,legacy_sks,cc_065_lobster,sks,lobster,4,a photo of a sks lobster with a city in the background
+cc101_20,legacy_sks,cc_070_panda,sks,panda,0,a photo of a sks panda
+cc101_20,legacy_sks,cc_070_panda,sks,panda,1,a photo of a sks panda in a forest
+cc101_20,legacy_sks,cc_070_panda,sks,panda,2,a photo of a sks panda on a beach
+cc101_20,legacy_sks,cc_070_panda,sks,panda,3,a photo of a sks panda on a cobblestone street
+cc101_20,legacy_sks,cc_070_panda,sks,panda,4,a photo of a sks panda with a city in the background
+cc101_20,legacy_sks,cc_075_pikachu,sks,pikachu,0,a photo of a sks pikachu
+cc101_20,legacy_sks,cc_075_pikachu,sks,pikachu,1,a photo of a sks pikachu in a forest
+cc101_20,legacy_sks,cc_075_pikachu,sks,pikachu,2,a photo of a sks pikachu on a beach
+cc101_20,legacy_sks,cc_075_pikachu,sks,pikachu,3,a photo of a sks pikachu on a cobblestone street
+cc101_20,legacy_sks,cc_075_pikachu,sks,pikachu,4,a photo of a sks pikachu with a city in the background
+cc101_20,legacy_sks,cc_094_teddybear,sks,teddybear,0,a photo of a sks teddybear
+cc101_20,legacy_sks,cc_094_teddybear,sks,teddybear,1,a photo of a sks teddybear in a forest
+cc101_20,legacy_sks,cc_094_teddybear,sks,teddybear,2,a photo of a sks teddybear on a beach
+cc101_20,legacy_sks,cc_094_teddybear,sks,teddybear,3,a photo of a sks teddybear on a cobblestone street
+cc101_20,legacy_sks,cc_094_teddybear,sks,teddybear,4,a photo of a sks teddybear with a city in the background
+cc101_20,legacy_sks,cc_098_vase,sks,vase,0,a photo of a sks vase
+cc101_20,legacy_sks,cc_098_vase,sks,vase,1,a photo of a sks vase in a forest
+cc101_20,legacy_sks,cc_098_vase,sks,vase,2,a photo of a sks vase on a beach
+cc101_20,legacy_sks,cc_098_vase,sks,vase,3,a photo of a sks vase on a cobblestone street
+cc101_20,legacy_sks,cc_098_vase,sks,vase,4,a photo of a sks vase with a city in the background
+cc101_20,vanilla_sks,cc_000_actionfigure,sks,actionfigure,0,a photo of a sks actionfigure
+cc101_20,vanilla_sks,cc_000_actionfigure,sks,actionfigure,1,a sks actionfigure in a forest
+cc101_20,vanilla_sks,cc_000_actionfigure,sks,actionfigure,2,a sks actionfigure on a beach
+cc101_20,vanilla_sks,cc_000_actionfigure,sks,actionfigure,3,a sks actionfigure wearing a top hat
+cc101_20,vanilla_sks,cc_000_actionfigure,sks,actionfigure,4,a sks actionfigure with cherry blossoms
+cc101_20,vanilla_sks,cc_004_barn,sks,barn,0,a photo of a sks barn
+cc101_20,vanilla_sks,cc_004_barn,sks,barn,1,a sks barn in a forest
+cc101_20,vanilla_sks,cc_004_barn,sks,barn,2,a sks barn on a beach
+cc101_20,vanilla_sks,cc_004_barn,sks,barn,3,a sks barn with sunset behind
+cc101_20,vanilla_sks,cc_004_barn,sks,barn,4,a sks barn surrounded by cherry blossoms
+cc101_20,vanilla_sks,cc_005_bear,sks,bear,0,a photo of a sks bear
+cc101_20,vanilla_sks,cc_005_bear,sks,bear,1,a sks bear in a forest
+cc101_20,vanilla_sks,cc_005_bear,sks,bear,2,a sks bear on a beach
+cc101_20,vanilla_sks,cc_005_bear,sks,bear,3,a sks bear wearing a top hat
+cc101_20,vanilla_sks,cc_005_bear,sks,bear,4,a sks bear with cherry blossoms
+cc101_20,vanilla_sks,cc_006_bike,sks,bike,0,a photo of a sks bike
+cc101_20,vanilla_sks,cc_006_bike,sks,bike,1,a sks bike in a forest
+cc101_20,vanilla_sks,cc_006_bike,sks,bike,2,a sks bike on a beach
+cc101_20,vanilla_sks,cc_006_bike,sks,bike,3,a sks bike on a mountain road
+cc101_20,vanilla_sks,cc_006_bike,sks,bike,4,a sks bike with cherry blossoms
+cc101_20,vanilla_sks,cc_009_bottle,sks,bottle,0,a photo of a sks bottle
+cc101_20,vanilla_sks,cc_009_bottle,sks,bottle,1,a sks bottle in a forest
+cc101_20,vanilla_sks,cc_009_bottle,sks,bottle,2,a sks bottle on a beach
+cc101_20,vanilla_sks,cc_009_bottle,sks,bottle,3,a sks bottle with a flag next to it
+cc101_20,vanilla_sks,cc_009_bottle,sks,bottle,4,a sks bottle with cherry blossoms
+cc101_20,vanilla_sks,cc_010_bunny,sks,bunny,0,a photo of a sks bunny
+cc101_20,vanilla_sks,cc_010_bunny,sks,bunny,1,a sks bunny in a forest
+cc101_20,vanilla_sks,cc_010_bunny,sks,bunny,2,a sks bunny on a beach
+cc101_20,vanilla_sks,cc_010_bunny,sks,bunny,3,a sks bunny wearing a top hat
+cc101_20,vanilla_sks,cc_010_bunny,sks,bunny,4,a sks bunny with cherry blossoms
+cc101_20,vanilla_sks,cc_023_castle,sks,castle,0,a photo of a sks castle
+cc101_20,vanilla_sks,cc_023_castle,sks,castle,1,a sks castle in a forest
+cc101_20,vanilla_sks,cc_023_castle,sks,castle,2,a sks castle on a beach
+cc101_20,vanilla_sks,cc_023_castle,sks,castle,3,a sks castle with sunset behind
+cc101_20,vanilla_sks,cc_023_castle,sks,castle,4,a sks castle surrounded by cherry blossoms
+cc101_20,vanilla_sks,cc_024_cat,sks,cat,0,a photo of a sks cat
+cc101_20,vanilla_sks,cc_024_cat,sks,cat,1,a sks cat in a forest
+cc101_20,vanilla_sks,cc_024_cat,sks,cat,2,a sks cat on a beach
+cc101_20,vanilla_sks,cc_024_cat,sks,cat,3,a sks cat wearing a top hat
+cc101_20,vanilla_sks,cc_024_cat,sks,cat,4,a sks cat with cherry blossoms
+cc101_20,vanilla_sks,cc_034_corkscrew,sks,corkscrew,0,a photo of a sks corkscrew
+cc101_20,vanilla_sks,cc_034_corkscrew,sks,corkscrew,1,a sks corkscrew in a forest
+cc101_20,vanilla_sks,cc_034_corkscrew,sks,corkscrew,2,a sks corkscrew on a beach
+cc101_20,vanilla_sks,cc_034_corkscrew,sks,corkscrew,3,a sks corkscrew with a flag next to it
+cc101_20,vanilla_sks,cc_034_corkscrew,sks,corkscrew,4,a sks corkscrew with cherry blossoms
+cc101_20,vanilla_sks,cc_036_cup,sks,cup,0,a photo of a sks cup
+cc101_20,vanilla_sks,cc_036_cup,sks,cup,1,a sks cup in a forest
+cc101_20,vanilla_sks,cc_036_cup,sks,cup,2,a sks cup on a beach
+cc101_20,vanilla_sks,cc_036_cup,sks,cup,3,a sks cup with a flag next to it
+cc101_20,vanilla_sks,cc_036_cup,sks,cup,4,a sks cup with cherry blossoms
+cc101_20,vanilla_sks,cc_042_dog,sks,dog,0,a photo of a sks dog
+cc101_20,vanilla_sks,cc_042_dog,sks,dog,1,a sks dog in a forest
+cc101_20,vanilla_sks,cc_042_dog,sks,dog,2,a sks dog on a beach
+cc101_20,vanilla_sks,cc_042_dog,sks,dog,3,a sks dog wearing a top hat
+cc101_20,vanilla_sks,cc_042_dog,sks,dog,4,a sks dog with cherry blossoms
+cc101_20,vanilla_sks,cc_046_earring,sks,earring,0,a photo of a sks earring
+cc101_20,vanilla_sks,cc_046_earring,sks,earring,1,a sks earring in a forest
+cc101_20,vanilla_sks,cc_046_earring,sks,earring,2,a sks earring on a beach
+cc101_20,vanilla_sks,cc_046_earring,sks,earring,3,a sks earring on a wooden table
+cc101_20,vanilla_sks,cc_046_earring,sks,earring,4,a sks earring with cherry blossoms
+cc101_20,vanilla_sks,cc_047_flower,sks,flower,0,a photo of a sks flower
+cc101_20,vanilla_sks,cc_047_flower,sks,flower,1,a sks flower in a forest
+cc101_20,vanilla_sks,cc_047_flower,sks,flower,2,a sks flower on a beach
+cc101_20,vanilla_sks,cc_047_flower,sks,flower,3,a sks flower with a flag next to it
+cc101_20,vanilla_sks,cc_047_flower,sks,flower,4,a sks flower with cherry blossoms
+cc101_20,vanilla_sks,cc_055_helmet,sks,helmet,0,a photo of a sks helmet
+cc101_20,vanilla_sks,cc_055_helmet,sks,helmet,1,a sks helmet in a forest
+cc101_20,vanilla_sks,cc_055_helmet,sks,helmet,2,a sks helmet on a beach
+cc101_20,vanilla_sks,cc_055_helmet,sks,helmet,3,a sks helmet on a wooden table
+cc101_20,vanilla_sks,cc_055_helmet,sks,helmet,4,a sks helmet with cherry blossoms
+cc101_20,vanilla_sks,cc_063_lamp,sks,lamp,0,a photo of a sks lamp
+cc101_20,vanilla_sks,cc_063_lamp,sks,lamp,1,a sks lamp in a forest
+cc101_20,vanilla_sks,cc_063_lamp,sks,lamp,2,a sks lamp on a beach
+cc101_20,vanilla_sks,cc_063_lamp,sks,lamp,3,a sks lamp with a flag next to it
+cc101_20,vanilla_sks,cc_063_lamp,sks,lamp,4,a sks lamp with cherry blossoms
+cc101_20,vanilla_sks,cc_065_lobster,sks,lobster,0,a photo of a sks lobster
+cc101_20,vanilla_sks,cc_065_lobster,sks,lobster,1,a sks lobster in a forest
+cc101_20,vanilla_sks,cc_065_lobster,sks,lobster,2,a sks lobster on a beach
+cc101_20,vanilla_sks,cc_065_lobster,sks,lobster,3,a sks lobster with a flag next to it
+cc101_20,vanilla_sks,cc_065_lobster,sks,lobster,4,a sks lobster with cherry blossoms
+cc101_20,vanilla_sks,cc_070_panda,sks,panda,0,a photo of a sks panda
+cc101_20,vanilla_sks,cc_070_panda,sks,panda,1,a sks panda in a forest
+cc101_20,vanilla_sks,cc_070_panda,sks,panda,2,a sks panda on a beach
+cc101_20,vanilla_sks,cc_070_panda,sks,panda,3,a sks panda wearing a top hat
+cc101_20,vanilla_sks,cc_070_panda,sks,panda,4,a sks panda with cherry blossoms
+cc101_20,vanilla_sks,cc_075_pikachu,sks,pikachu,0,a photo of a sks pikachu
+cc101_20,vanilla_sks,cc_075_pikachu,sks,pikachu,1,a sks pikachu in a forest
+cc101_20,vanilla_sks,cc_075_pikachu,sks,pikachu,2,a sks pikachu on a beach
+cc101_20,vanilla_sks,cc_075_pikachu,sks,pikachu,3,a sks pikachu wearing a top hat
+cc101_20,vanilla_sks,cc_075_pikachu,sks,pikachu,4,a sks pikachu with cherry blossoms
+cc101_20,vanilla_sks,cc_094_teddybear,sks,teddybear,0,a photo of a sks teddybear
+cc101_20,vanilla_sks,cc_094_teddybear,sks,teddybear,1,a sks teddybear in a forest
+cc101_20,vanilla_sks,cc_094_teddybear,sks,teddybear,2,a sks teddybear on a beach
+cc101_20,vanilla_sks,cc_094_teddybear,sks,teddybear,3,a sks teddybear wearing a top hat
+cc101_20,vanilla_sks,cc_094_teddybear,sks,teddybear,4,a sks teddybear with cherry blossoms
+cc101_20,vanilla_sks,cc_098_vase,sks,vase,0,a photo of a sks vase
+cc101_20,vanilla_sks,cc_098_vase,sks,vase,1,a sks vase in a forest
+cc101_20,vanilla_sks,cc_098_vase,sks,vase,2,a sks vase on a beach
+cc101_20,vanilla_sks,cc_098_vase,sks,vase,3,a sks vase with a flag next to it
+cc101_20,vanilla_sks,cc_098_vase,sks,vase,4,a sks vase with cherry blossoms

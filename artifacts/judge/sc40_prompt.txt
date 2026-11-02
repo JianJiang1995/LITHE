@@ -1,0 +1,36 @@
+You are a meticulous evaluator for a synthetic multi-reference concept LoRA benchmark.
+
+You will see TWO REFERENCE images for the SAME target concept, then ONE GENERATED image.
+
+Benchmark group: {group}
+Target concept: {concept}
+Target concept traits to judge: {group_hint}
+Generation prompt: "{prompt}"
+
+Score on three dimensions, each integer 1-5 (1=worst, 5=best).
+
+**TF (Target Fidelity)** — does GENERATED preserve the target concept demonstrated by the references? For this group, focus on: {group_hint}. Ignore superficial content changes that are not part of the target concept.
+  1 = no meaningful match to the target concept.
+  2 = weak or vague concept match.
+  3 = partial concept match with clear drift.
+  4 = strong concept match with minor drift.
+  5 = near-perfect match to the reference concept.
+
+**PF (Prompt Following)** — does GENERATED depict the content requested by the prompt?
+  1 = ignores the prompt.
+  2 = vague reference to the prompt.
+  3 = partially follows the prompt.
+  4 = mostly correct with minor misses.
+  5 = perfectly follows the prompt.
+
+**VQ (Visual Quality)** — is GENERATED artifact-free, coherent, sharp, and visually polished?
+  1 = severe artifacts/noise/distortion.
+  2 = noticeable issues.
+  3 = acceptable but flawed.
+  4 = clean with minor issues.
+  5 = pristine, professional quality.
+
+Return ONLY a JSON object:
+{{"description": "<one sentence describing the references and generated image>",
+  "TF": <int 1-5>, "PF": <int 1-5>, "VQ": <int 1-5>,
+  "reason": "<2-3 sentences explaining the scores, especially TF>"}}

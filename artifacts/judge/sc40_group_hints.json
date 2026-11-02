@@ -1,0 +1,7 @@
+{
+  "outfit": "the target outfit/costume identity: garment silhouette, materials, trim, and signature construction",
+  "lighting": "the target lighting condition: color, direction, contrast, shadows, highlights, and atmosphere",
+  "pose": "the target pose/composition: body arrangement, camera framing, limb geometry, and overall composition",
+  "painter_style": "the target painterly style: brushwork, palette, line treatment, texture, and medium feel",
+  "anime_style": "the target anime visual style: cel treatment, linework, palette, shading, texture, and graphic language"
+}
