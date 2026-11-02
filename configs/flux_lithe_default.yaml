@@ -1,0 +1,61 @@
+# LITHE on FLUX.1-dev: default hyperparameters (paper, Appendix "Hyperparameters").
+# Values not listed in the paper table follow the diffusers DreamBooth-LoRA FLUX
+# reference trainer and are marked "reference trainer".
+
+model:
+  pretrained: black-forest-labs/FLUX.1-dev   # HF repo id or local diffusers folder
+  dtype: bfloat16                            # frozen backbone, VAE and text encoders
+  target_modules:                            # suffix match; 342 linears on FLUX.1-dev
+    - attn.to_q
+    - attn.to_k
+    - attn.to_v
+    - attn.to_out.0
+    - attn.add_q_proj
+    - attn.add_k_proj
+    - attn.add_v_proj
+    - attn.to_add_out
+    - ff.net.0.proj
+    - ff.net.2
+    - ff_context.net.0.proj
+    - ff_context.net.2
+
+lora:
+  rank: 16
+  alpha: 16                                  # alpha / r = 1
+
+lithe:
+  # The Hadamard codebook is fixed by the construction: K = 512 (9 bits),
+  # block size B = 64, L = 3 RVQ levels, sigma_A = 0.06 on every level,
+  # sigma_B = (0.0025, 0.001, 0.0005). Only the schedule below is tunable.
+  requantize_every: 10                       # lazy re-quantisation period N (forwards)
+  drift_tau: null                            # set 1.0e-4 for the drift-aware variant
+
+train:
+  learning_rate: 1.0e-4
+  lr_scheduler: constant                     # no warmup, no decay
+  adam_beta1: 0.9
+  adam_beta2: 0.999
+  adam_epsilon: 1.0e-8
+  adam_weight_decay: 1.0e-4                  # reference trainer
+  max_grad_norm: 1.0                         # reference trainer
+  max_train_steps: 1500
+  train_batch_size: 1
+  gradient_accumulation_steps: 4             # effective batch 4
+  resolution: 1024
+  center_crop: true
+  random_flip: false
+  weighting_scheme: logit_normal             # rectified-flow timestep density
+  logit_mean: 0.0
+  logit_std: 1.0
+  guidance_scale: 3.5                        # reference trainer (guidance-distilled dev model)
+  max_sequence_length: 512                   # T5 tokens, reference trainer
+  gradient_checkpointing: false
+  seed: 42
+  save_every: 500                            # also writes the final adapter
+
+infer:
+  num_inference_steps: 28
+  guidance_scale: 3.5
+  height: 1024
+  width: 1024
+  seed: 42

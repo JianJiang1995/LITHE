@@ -1,0 +1,14 @@
+__pycache__/
+*.pyc
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+outputs/
+checkpoints/
+data/
+*.safetensors
+*.lithe
+*.pt
+*.bin
+*.ckpt
