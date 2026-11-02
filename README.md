@@ -2,7 +2,7 @@
 
 Reference code for the NeurIPS 2026 paper (to appear) by Jian Jiang, Oya Celiktutan, Yaohui Wang and Yutong Ban.
 
-Code: https://github.com/JianJiang1995/LITHE. Pretrained index files: https://huggingface.co/Fanjue/LITHE (coming soon).
+Code: https://github.com/JianJiang1995/LITHE. Pretrained index files: https://huggingface.co/Fanjue/LITHE.
 
 ## What LITHE is
 
@@ -160,7 +160,7 @@ The index stream is little-endian uint16: the A-side indices of all modules in h
 
 ## Pretrained index files
 
-Coming soon (TODO): the 110 rank-16 adapters evaluated in the paper (DreamBooth-30, CC101-20, SCIdentity, SC-40) will be published on Hugging Face at [Fanjue/LITHE](https://huggingface.co/Fanjue/LITHE) as `.lithe` files; the repository is not populated yet. They use the Kohya 304-module layout (header `module_set = kohya-304`), decode with `scripts/decode_to_lora.py` to Kohya-keyed LoRA files that `FluxPipeline.load_lora_weights` loads, and require FLUX.1-dev.
+The 110 rank-16 adapters evaluated in the paper (DreamBooth-30, CC101-20, SCIdentity, SC-40) are on Hugging Face at [Fanjue/LITHE](https://huggingface.co/Fanjue/LITHE) as `.lithe` files (3.23 MB each on average; `manifest.csv` lists trigger tokens and SHA256 checksums). They use the Kohya 304-module layout (header `module_set = kohya-304`), decode with `scripts/decode_to_lora.py` to Kohya-keyed LoRA files that `FluxPipeline.load_lora_weights` loads, and require FLUX.1-dev.
 
 ## Paper artifacts
 
@@ -174,8 +174,8 @@ Coming soon (TODO): the 110 rank-16 adapters evaluated in the paper (DreamBooth-
 
 * Included: the codebook, native STE training on FLUX.1-dev (diffusers), index files, decoding to standard LoRA, inference, and a PyTorch reference of index-resident multi-adapter routing.
 * Data: the synthetic benchmarks SCIdentity and SC-40 are not part of this release; their data-generation protocol is described in the paper appendix. DreamBooth and CustomConcept101 are available from their original authors.
-* Not included: the fused Triton kernels, the serving / wall-time benchmark harness, the cross-architecture (SDXL, Qwen-Image) trainers, and evaluation scripts. The LLM-judge prompts and a minimal judge script are in `artifacts/judge/` (the judges are paid proprietary APIs, so rescoring may drift from the released scores). TODO: release DreamSim / CLIP evaluation scripts.
-* Some paper tables were produced with a Kohya sd-scripts network module that applies the same codebook to the fused FLUX linears (304 modules including the modulation linears). `scripts/encode.py --checkpoint` imports such index files and `scripts/decode_to_lora.py` writes them with Kohya keys, which `load_lora_weights` converts. TODO: port of the Kohya training module.
+* Not included: the fused Triton kernels, the serving / wall-time benchmark harness, the cross-architecture (SDXL, Qwen-Image) trainers, and evaluation scripts. The LLM-judge prompts and a minimal judge script are in `artifacts/judge/` (the judges are paid proprietary APIs, so rescoring may drift from the released scores). DreamSim / CLIP evaluation scripts are not yet included.
+* Some paper tables were produced with a Kohya sd-scripts network module that applies the same codebook to the fused FLUX linears (304 modules including the modulation linears). `scripts/encode.py --checkpoint` imports such index files and `scripts/decode_to_lora.py` writes them with Kohya keys, which `load_lora_weights` converts. The Kohya training module itself is not yet included.
 * Training differs from a numerical replay of the paper runs in implementation details (single-process loop instead of accelerate, per-module drift trigger). The quantiser, codebook, STE and schedule follow the paper.
 
 ## Citation
