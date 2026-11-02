@@ -7,8 +7,8 @@ uses and applies, per sample i, the rank-stacked update
     A_i = vcat_a[ sqrt(w_ia) A_a ],  B_i = hcat_a[ sqrt(w_ia) B_a ],  delta_i = B_i A_i x_i
 
 so one sample can use one adapter, a weighted mixture, or none (empty route).
-This is a readable PyTorch reference of the routing math; the paper's fused
-SGMV kernel is not part of this release.
+This is a readable PyTorch reference of the routing math; the Triton kernels
+used for the paper's timings are in ``lithe.kernels``.
 """
 from __future__ import annotations
 

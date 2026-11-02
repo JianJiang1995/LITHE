@@ -66,6 +66,11 @@ lithe/
   fileio.py     .lithe index file: uint16 indices, LZMA-9 packing, checksums
   convert.py    .lithe <-> dense LoRA state dict; import of original training checkpoints
   serve.py      index-resident multi-adapter batched forward (PyTorch reference)
+  kohya.py      Kohya-304 FLUX module names -> diffusers linears (factor and index-level split)
+  kernels/      Triton kernels with PyTorch references: packed 9-bit decode, per-sample SGMV,
+                index-resident shared-codebook SGMV, closed-form search
+serving/        serving benchmarks of the paper (residency, hybrid sweep, same-batch routing,
+                hot-swap, serial / paging baselines, SGMV head-to-head); see serving/README.md
 scripts/
   train_lithe_flux.py   train a LITHE adapter on an image folder (FLUX.1-dev)
   encode.py             dense LoRA or training checkpoint -> .lithe
@@ -74,7 +79,7 @@ scripts/
   serve_demo.py         heterogeneous adapters in one batched FLUX forward
   cpu_smoke.py          end-to-end toy pipeline on CPU, no FLUX weights
 configs/flux_lithe_default.yaml   paper default hyperparameters
-tests/                  pytest suite, CPU only
+tests/                  pytest suite (CPU; kernel tests also run on CUDA when available)
 artifacts/              evaluation prompts, per-prompt results, judge prompts
 ```
 
@@ -172,7 +177,7 @@ python scripts/serve_demo.py --pretrained ./checkpoints/FLUX.1-dev \
   --request "none|a lighthouse"
 ```
 
-All adapters stay resident as index streams; each forward decodes only the adapters used by the batch and applies the rank-stacked per-sample update of the paper (`lithe/serve.py`). This is a readable PyTorch reference of the routing; the fused Triton training-search and SGMV serving kernels used for the paper's timing numbers are not part of this release, so wall-time results are not reproduced by this code.
+All adapters stay resident as index streams; each forward decodes only the adapters used by the batch and applies the rank-stacked per-sample update of the paper (`lithe/serve.py`). This is a readable PyTorch reference of the routing. The Triton kernels and the benchmark harness behind the paper's serving and wall-time numbers are in `lithe/kernels/` and `serving/` (see [`serving/README.md`](serving/README.md)).
 
 ### 6. Encode an existing LoRA (post hoc)
 
@@ -220,7 +225,8 @@ The 110 rank-16 adapters evaluated in the paper (DreamBooth-30, CC101-20, SCIden
 
 * Included: the codebook, native STE training on FLUX.1-dev (diffusers), index files, decoding to standard LoRA, inference, and a PyTorch reference of index-resident multi-adapter routing.
 * Data: the synthetic benchmarks SCIdentity and SC-40 are not part of this release; their data-generation protocol is described in the paper appendix. DreamBooth and CustomConcept101 are available from their original authors.
-* Not included: the fused Triton kernels, the serving / wall-time benchmark harness, the cross-architecture (SDXL, Qwen-Image) trainers, and evaluation scripts. The LLM-judge prompts and a minimal judge script are in `artifacts/judge/` (the judges are paid proprietary APIs, so rescoring may drift from the released scores). DreamSim / CLIP evaluation scripts are not yet included.
+* Serving: the Triton kernels (`lithe/kernels/`) and the serving / wall-time benchmarks (`serving/`) are included; `serving/README.md` lists the expected paper numbers and how the released setup differs from the paper runs.
+* Not included: the cross-architecture (SDXL, Qwen-Image) trainers and evaluation scripts. The LLM-judge prompts and a minimal judge script are in `artifacts/judge/` (the judges are paid proprietary APIs, so rescoring may drift from the released scores). DreamSim / CLIP evaluation scripts are not yet included.
 * Some paper tables were produced with a Kohya sd-scripts network module that applies the same codebook to the fused FLUX linears (304 modules including the modulation linears). `scripts/encode.py --checkpoint` imports such index files and `scripts/decode_to_lora.py` writes them with Kohya keys, which `load_lora_weights` converts. The Kohya training module itself is not yet included.
 * Training differs from a numerical replay of the paper runs in implementation details (single-process loop instead of accelerate, per-module drift trigger). The quantiser, codebook, STE and schedule follow the paper.
 
