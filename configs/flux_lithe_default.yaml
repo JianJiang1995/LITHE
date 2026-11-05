@@ -1,4 +1,7 @@
-# LITHE on FLUX.1-dev: default hyperparameters (paper, Appendix "Hyperparameters").
+# LITHE on FLUX.1-dev: default hyperparameters of the released diffusers trainer.
+# Codebook, rank, alpha, optimiser, learning rate and re-quantisation period match the paper
+# (Table 7). The paper adapters themselves were trained with Kohya sd-scripts at 512 x 512 for
+# 500 (identity) / 750 (SC-40) steps, discrete flow shift 3.0 and guidance 1.0; see README.
 # Values not listed in the paper table follow the diffusers DreamBooth-LoRA FLUX
 # reference trainer and are marked "reference trainer".
 

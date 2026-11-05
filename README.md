@@ -78,7 +78,7 @@ scripts/
   infer.py              generate images with a .lithe file
   serve_demo.py         heterogeneous adapters in one batched FLUX forward
   cpu_smoke.py          end-to-end toy pipeline on CPU, no FLUX weights
-configs/flux_lithe_default.yaml   paper default hyperparameters
+configs/flux_lithe_default.yaml   default hyperparameters of the released trainer
 tests/                  pytest suite (CPU; kernel tests also run on CUDA when available)
 artifacts/              evaluation prompts, per-prompt results, judge prompts
 ```
@@ -139,7 +139,9 @@ python scripts/train_lithe_flux.py \
   --output_dir ./outputs/my_subject
 ```
 
-Defaults come from `configs/flux_lithe_default.yaml` (rank 16, alpha 16, AdamW at 1e-4 constant, 1500 steps, batch 1 x 4 accumulation, 1024 px, logit-normal timesteps, lazy re-quantisation every 10 forwards). Any of `--max_train_steps`, `--resolution`, `--rank`, `--learning_rate`, `--gradient_accumulation_steps`, `--seed`, `--save_every`, `--gradient_checkpointing` overrides the config. The script runs on a single GPU that holds the bf16 FLUX transformer plus activations (the paper used one 80 GB A100); `--gradient_checkpointing` reduces activation memory.
+Defaults come from `configs/flux_lithe_default.yaml` (rank 16, alpha 16, AdamW at 1e-4 constant, 1500 steps, batch 1 x 4 accumulation, 1024 px, logit-normal timesteps, lazy re-quantisation every 10 forwards). Any of `--max_train_steps`, `--resolution`, `--rank`, `--learning_rate`, `--gradient_accumulation_steps`, `--seed`, `--save_every`, `--gradient_checkpointing` overrides the config. The script runs on a single GPU that holds the bf16 FLUX transformer plus activations (one 80 GB A100 is enough); `--gradient_checkpointing` reduces activation memory.
+
+These defaults are not the recipe behind the paper's numbers. The paper's adapters were trained with the Kohya sd-scripts FLUX LoRA trainer (paper Table 7): 304 fused linears including the modulation layers, 512 x 512, 500 steps for the identity benchmarks and 750 for SC-40, learning rate 1e-4 (constant for the identity benchmarks, cosine with 100 warmup steps for SC-40), effective batch 4 (4 GPUs, no accumulation), timestep shift sampling with discrete flow shift 3.0, uniform loss weighting and guidance 1.0. `--resolution 512 --max_train_steps 500` and `train.guidance_scale: 1.0` in the config bring this script closer to that recipe; its module set (342 linears) and timestep sampling still differ.
 
 Output: `outputs/my_subject/adapter.lithe`. With the default 342 target linears and r = 16 it holds 2,101,248 indices and is about 1.8 to 2.0 MB.
 
@@ -227,8 +229,8 @@ The 110 rank-16 adapters evaluated in the paper (DreamBooth-30, CC101-20, SCIden
 * Data: the synthetic benchmarks SCIdentity and SC-40 are not part of this release; their data-generation protocol is described in the paper appendix. DreamBooth and CustomConcept101 are available from their original authors.
 * Serving: the Triton kernels (`lithe/kernels/`) and the serving / wall-time benchmarks (`serving/`) are included; `serving/README.md` lists the expected paper numbers and how the released setup differs from the paper runs.
 * Not included: the cross-architecture (SDXL, Qwen-Image) trainers and evaluation scripts. The LLM-judge prompts and a minimal judge script are in `artifacts/judge/` (the judges are paid proprietary APIs, so rescoring may drift from the released scores). DreamSim / CLIP evaluation scripts are not yet included.
-* Some paper tables were produced with a Kohya sd-scripts network module that applies the same codebook to the fused FLUX linears (304 modules including the modulation linears). `scripts/encode.py --checkpoint` imports such index files and `scripts/decode_to_lora.py` writes them with Kohya keys, which `load_lora_weights` converts. The Kohya training module itself is not yet included.
-* Training differs from a numerical replay of the paper runs in implementation details (single-process loop instead of accelerate, per-module drift trigger). The quantiser, codebook, STE and schedule follow the paper.
+* The paper's FLUX.1-dev quality and serving results use adapters trained with a Kohya sd-scripts network module that applies the same codebook to the fused FLUX linears (304 modules including the modulation linears). `scripts/encode.py --checkpoint` imports such index files and `scripts/decode_to_lora.py` writes them with Kohya keys, which `load_lora_weights` converts. The Kohya training module itself is not yet included.
+* `scripts/train_lithe_flux.py` is therefore not a numerical replay of the paper runs. Besides the recipe differences listed under "Train an adapter", it uses a single-process loop instead of accelerate and a per-module drift trigger. The quantiser, codebook, STE and re-quantisation schedule follow the paper.
 
 ## Citation
 
