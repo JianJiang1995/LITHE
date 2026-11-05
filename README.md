@@ -1,4 +1,4 @@
-# LITHE: Lightweight Indexed Twin Hadamard Encoding for Diffusion Personalization
+# LITHE: Lattice-Indexed Twin Hadamard Encoding for Diffusion Personalization
 
 Reference code for the NeurIPS 2026 paper (to appear) by Jian Jiang, Oya Celiktutan, Yaohui Wang and Yutong Ban.
 
@@ -236,7 +236,7 @@ The 110 rank-16 adapters evaluated in the paper (DreamBooth-30, CC101-20, SCIden
 
 ```bibtex
 @inproceedings{jiang2026lithe,
-  title     = {{LITHE}: Lightweight Indexed Twin Hadamard Encoding for Diffusion Personalization},
+  title     = {{LITHE}: Lattice-Indexed Twin Hadamard Encoding for Diffusion Personalization},
   author    = {Jiang, Jian and Celiktutan, Oya and Wang, Yaohui and Ban, Yutong},
   booktitle = {Advances in Neural Information Processing Systems (NeurIPS)},
   year      = {2026},

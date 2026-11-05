@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "lithe"
 version = "1.0.0"
-description = "LITHE: Lightweight Indexed Twin Hadamard Encoding for diffusion personalization"
+description = "LITHE: Lattice-Indexed Twin Hadamard Encoding for diffusion personalization"
 readme = "README.md"
 license = {text = "Apache-2.0"}
 requires-python = ">=3.10"

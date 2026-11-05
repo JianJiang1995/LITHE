@@ -1,4 +1,4 @@
-"""LITHE: Lightweight Indexed Twin Hadamard Encoding for diffusion personalisation."""
+"""LITHE: Lattice-Indexed Twin Hadamard Encoding for diffusion personalisation."""
 from .codebook import (BLOCK_SIZE, K, N_BITS, NUM_LEVELS, SIGMA_A, SIGMA_B, build_pools,
                        codebook_sha256, codewords, twin_pools)
 from .convert import decode_factors, from_dense_lora, from_training_checkpoint, to_lora_state_dict
